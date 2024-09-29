@@ -3,125 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Duneesha Peramune | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
+        /* Basic CSS for layout */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f4f4f4;
             color: #333;
         }
+
+        /* Header styling */
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
             text-align: center;
         }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation bar */
         nav {
-            margin: 20px 0;
+            margin-top: 20px;
         }
         nav a {
-            margin: 0 15px;
-            color: white;
+            color: #fff;
             text-decoration: none;
+            margin: 0 15px;
             font-weight: bold;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
+
+        /* Section Styling */
         section {
-            background: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
+            padding: 50px 0;
             text-align: center;
-            padding: 20px 0;
-            background-color: #4CAF50;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        /* About Section */
+        #about p {
+            width: 60%;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .skill {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 200px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .skill img {
+            width: 50px;
+            height: 50px;
+        }
+
+        
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Portfolio</h1>
+    <h1>Duneesha Peramune</h1>
+    <p>Biotechnology Student | Aspiring Forensic Scientist | Photographer</p>
     <nav>
-        <a href="#about">About Me</a>
-        <a href="#education">Educational Qualifications</a>
-        <a href="#other_qualifications">Other Professional Qualifications</a>
-        <a href="#other_skills">Other Skills</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#resume">Resume</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<div class="container">
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am Duneesha Peramune, an undergraduate student studying for a BSc (Hons) in Biotechnology. I am building a basis in biological sciences and research methods, focusing on how biotechnology can be applied in areas like healthcare. In addition to my studies, I have a strong passion for photography and I am learning food and product photography in my leisure time. I am a friendly, sensitive, and introverted person. I hope to become a forensic scientist one day, contributing to advancements in crime-solving and justice.</p>
-        <img src="8210547c-1ca6-4665-9f96-844810c20845.jpg" alt="Duneesha Peramune - Biotechnology Student and Photographer" width="200">
-    </section>
+<section id="about">
+    <h2>About Me</h2>
+    <p>I'm an undergraduate student pursuing a BSc (Hons) in Biotechnology, with a passion for forensic science and photography. I am driven by curiosity and enjoy learning new skills to apply in scientific research and the arts.</p>
+</section>
 
-    <section id="education">
-        <h2>Educational Qualifications</h2>
-        <ul>
-            <li>Secondary Education: Sumana Balika Vidyalaya. G.C.E. Advanced Level - 3 Ordinary Passes, G.C.E. Ordinary Level - 7 Distinction Passes and 2 Very Good Passes.</li>
-            <li>Higher Education: Sri Lankan Institute of Information Technology</li>
-        </ul>
-    </section>
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill">
+            <img src="icons/science.png" alt="Biotechnology">
+            <h3>Biotechnology</h3>
+        </div>
+        <div class="skill">
+            <img src="icons/camera.png" alt="Photography">
+            <h3>Photography</h3>
+        </div>
+        <div class="skill">
+            <img src="icons/software.png" alt="Software">
+            <h3>Software Skills</h3>
+        </div>
+        <div class="skill">
+            <img src="icons/communication.png" alt="Communication">
+            <h3>Communication</h3>
+        </div>
+    </div>
+</section>
 
-    <section id="other_qualifications">
-        <h2>Other Professional Qualifications</h2>
-        <ul>
-            <li>Photography</li>
-            <li>Graphic Designing</li>
-        </ul>
-    </section>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email me at <a href="mailto:duneeshaperamune@gmail.com">duneeshaperamune@gmail.com</a></p>
+</section>
 
-    <section id="other_skills">
-        <h2>Other Skills</h2>
-        <ul>
-            <li>Software Skills</li>
-            <li>Communication Skills</li>
-            <li>Videography</li>
-        </ul>
-    </section>
-
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Reading Books</li>
-            <li>Photography</li>
-        </ul>
-    </section>
-
-    <section id="resume">
-        <h2>Resume</h2>
-        <p><a href="HS24510046_Duneesha Sathsarani Peramune 2.pdf" download>Download Resume</a></p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Details</h2>
-        <ul>
-            <li>Email: <a href="mailto:duneeshaperamune@gmail.com">duneeshaperamune@gmail.com</a></li>
-        </ul>
-    </section>
-</div>    
-    
 <footer>
-    <p>&copy; 2024 My Portfolio</p>
+    <p>&copy; 2024 Duneesha Peramune. All Rights Reserved. | <a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
 </footer>
-    
+
 </body>
 </html>
+        
+        
